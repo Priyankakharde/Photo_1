@@ -1,0 +1,47 @@
+.here_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+.hero-container h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+.hero-container p{
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+.hero-content button{
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}    
+.hero-gallery{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+.hero-gallery img{
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transform: rotate(5deg);
+    transition: transfrom 0.3s ease-in-out;
+}
+.hero-gallery img :nth-child(odd){
+    transform: rotate(-5deg);
+}
+.hero-gallery img:hover{
+    transform: scale(1.05);
+}
